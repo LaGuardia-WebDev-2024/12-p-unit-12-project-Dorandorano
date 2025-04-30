@@ -2,8 +2,8 @@
 Requirements
 [  ] $() Select by Element, ID AND Class 
 [  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ y] Add Five CSS Declarations
+[ y ] Include Three Images
 
 Select ONE Additional 
 [ no ] Feature 1 - Use .addClass() method
@@ -13,7 +13,6 @@ Select ONE Additional
 [ no ] Feature 5 - Use .append() method
 -->
 
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -22,40 +21,74 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
-    <ol>
-      <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
-      </li>
+    <h1 class="header">Goune Kwak</h1>
 
-      <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
-      </li>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="https://gounesportfolio.carrd.co/">Artworks</a>
+      <a href="1.html">Contact</a>
+      <a href="2.html">About</a>
+    </div>
 
-      <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
-      </li>
-    </ol>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>My Favorite Animal is a Seal</h2>
+          <h5>SEAL, April 29, 2025</h5>
+          <img src="https://i.redd.it/e89ksw3oklu81.gif" />
+
+          <p>Some text..</p>
+          <p>
+            Seals are so silly and cute I love them so much
+          </p>
+        </div>
+        <div class="card">
+          <h2>But I also love snow fairies 
+            </h2>
+          <h5>Shima Enaga, April 29, 2025</h5>
+          <img src="https://preview.redd.it/behold-the-shima-enaga-aka-japanese-snow-fairy-v0-58f0xrqw5t1d1.jpeg?width=640&crop=smart&auto=webp&s=c8b29f710e8973a440aeff479f075ad29f42aa45">
+          <p>Info..</p>
+          <p>
+            Sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco.
+          </p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>Quokkas are my third favorite</h2>
+          <img src="https://media.tenor.com/YMtV-et07Q4AAAAM/quokka.gif">
+         
+          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        </div>
+        
+        <div class="card">
+          <h3>Follow Me</h3>
+          <p>@gouneenene on instagram..</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
-      });
+      
+      
+      $("h1")
+  .slideUp(2000)
+  .slideDown(1500);
+$("div")
+  .slideUp(1500)
+  .slideDown(1000);
+      
+      
 
-      $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
-      });
-
-      $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-      });
+      
     </script>
   </body>
 </html>
