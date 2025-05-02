@@ -1,14 +1,14 @@
 <!-- Unit 12 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
+[ y ] $() Select by Element, ID AND Class 
+[  y] Use Three Different jQuery Methods 
 [ y] Add Five CSS Declarations
 [ y ] Include Three Images
 
 Select ONE Additional 
 [ no ] Feature 1 - Use .addClass() method
 [ no ] Feature 2 - Use a variable in javaScript 
-[ no ] Feature 3 - Use .mouseover() method
+[ yes ] Feature 3 - Use .mouseover() method
 [ no ] Feature 4 - Use .show() method
 [ no ] Feature 5 - Use .append() method
 -->
@@ -48,7 +48,7 @@ Select ONE Additional
           <h5>Shima Enaga, April 29, 2025</h5>
           <img src="https://preview.redd.it/behold-the-shima-enaga-aka-japanese-snow-fairy-v0-58f0xrqw5t1d1.jpeg?width=640&crop=smart&auto=webp&s=c8b29f710e8973a440aeff479f075ad29f42aa45">
           <p>Info..</p>
-          <p>
+          <p id= "bird">
             Sunt in culpa qui officia deserunt mollit anim id est laborum
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -87,8 +87,14 @@ $("div")
   .slideDown(1000);
       
       
-
+        
+      $("#bird").text("I freaking LOVE these birds");
+            $(".card").css("border-radius", "80px");
       
+  $("h1").mouseover(function(){
+  $("h1").css("background-color", "white");
+});
+
     </script>
   </body>
 </html>
